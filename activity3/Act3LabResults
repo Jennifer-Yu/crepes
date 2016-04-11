@@ -1,0 +1,48 @@
+What value is returned by indexOf if the substring does not occur in the string?
+    - Returns -1.
+    
+API for String indexOf methods
+int	indexOf(String str)
+Returns the index within this string of the first occurrence of the specified substring.
+int	indexOf(String str, int fromIndex)
+Returns the index within this string of the first occurrence of the specified substring, starting at the specified index.
+
+TRACES
+findKeyword("She's my sister", "sister", 0);
+    - phrase = "she's my sister"
+    - goal = "sister"
+    - psn = 9
+    - before = " "
+    - after = " "
+    - return 9
+    
+findKeyword("Brother Tom is helpful", "brother", 0);
+    - phrase = "brother tom is helpful"
+    - goal = "brother"
+    - psn = 0
+    - before = " "
+    - after = " "
+    - return 0
+
+findKeyword("I can't catch wild cats.", "cat", 0);
+    - phrase = "i can't catch wild cats."
+    - goal = "cat"
+    - psn = 18
+    - before = " "
+    - after = "."
+    - return 18
+    
+findKeyword("I know nothing about snow plows.", "no", 0);
+    - phrase = "i know nothing about snow plows."
+    - goal = "no"
+    - psn = 3
+    - before = "k"
+    - after = "w"
+    - psn = phrase.indexOf("no", 4) = 7
+    - before = " "
+    - after = "t"
+    - psn = phrase.indexOf("no", 8) = 22
+    - before = "s"
+    - after = "w"
+    - psn = phrase.indexOf("no", 23)
+    - return -1

@@ -22,6 +22,11 @@ public class StringExplorer
 		
 		//  Try other methods here:
 
+		int notFoundPsn = sample.indexOf("slow");
+		System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
+		
+		System.out.println("indexOf(String, int) example: " + sample.indexOf("dog", 5));
+		System.out.println("indexOf(String, int) example: " + sample.indexOf("brown", 20));
 	}
 
 }
