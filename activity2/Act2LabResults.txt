@@ -1,0 +1,34 @@
+Start
+• My mother and I talked last night.
+    - "Tell me more about your family."
+• I said no!
+    - "Why so negative?"
+• The weather is nice.
+    - "You don't say."
+• Do you know my brother?
+    - "Why so negative?" (because it has "no" in it) LOOL ????!!
+    
+Keyword and Responses
+    1. "cake"
+        -"Sounds delicious"
+    2. "exam"
+        -"A Day of Relaxation? Sounds awesome!"
+    3. "yes"
+        -"I love the positive attitude!"
+    
+What happens when more than one keyword appears in a string? Consider the string “My
+mother has a dog but no cat.” Explain how to prioritize responses in the reply method.
+    - The response to this would be "Why so negative?" because "no" is the first keyword addressed.
+    (That answer is surprisingly accurate, but that's beside the point.) The words that are most
+    specific or appear the most frequently should be prioritized because they would provide the
+    best answers.
+    
+Question
+1. What happens when a keyword is included in another word? Consider statements like “I know
+all the state capitals” and “I like vegetables smothered in cheese.” Explain the problem with the
+responses to these statements.
+    - If the keyword is included in another word, it will trigger that keyword's response.  For
+    example, "Do you know my brother?" triggers the response "Why so negative?" because "know"
+    has the word "no" in it.  This is an inappropiate response to the initial question.
+    Possible solutions: A more universal response to no or checking if no is the actual word used, 
+    such as by checking to see if there are characters suppounding the phrase (maybe replace "no" with " no ")
